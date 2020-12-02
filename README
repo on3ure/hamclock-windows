@@ -1,0 +1,13 @@
+In windows download:
+https://sourceforge.net/projects/vcxsrv/
+(choose single windows)
+In windows install WSL2 with ubuntu:
+Start wsl.exe
+
+sudo apt -y install g++ libx11-dev wget
+wget https://www.clearskyinstitute.com/ham/HamClock/ESPHamClock.zip
+unzip ESPHamClock.zip
+cd ESPHamClock
+make hamclock-800x400
+export  DISPLAY=:0
+./hamclock
